@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+:root {
+    --blue: #007bff;
+    --dark: #343a40;
+    --light-green: #d4f8d4;
+    --brown: #0d0804;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* -----------------------------LANDING PAGE, SIGN UP AND LOGIN----------------------------- */
+.auth-body {
+    overflow: hidden;
+}
+.intro-msg {
+    font-size: 3.5rem;
+    font-weight: 250;
+    line-height: 1.2em;
+    padding-top: 10rem;
+}
+#auth-page {
+    position: relative;
+    background: url("images/background1.jpg") center center/cover no-repeat;
+    height: 100vh;
+}
+.primary-overlay {
+    background: rgba(50, 146, 166, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#landingPage input {
+    margin: .8rem;
+    padding: .8rem;
+    width: 96%;
+    border-radius: 30px;
+    border: none;
+    position: center;
+}
+.sign-in {
+    margin-left: auto;
+    margin-top: 20%;
+    padding: 3rem;
+    padding-top: 10%;
+}
+.log-in {
+    padding-top: 12rem;
+}
+.auth-btn {
+    width: 102%;
+    margin-top: 2rem;
+}
+/* ----------------------------END OF LANDING PAGE, SIGN UP AND LOGIN ----------------------------- */
+
+
+/* -------------------------------------------- INDEX --------------------------------------------- */
+#landing-page {
+    position: relative;
+    background: url("images/background1.jpg") center center/cover no-repeat;
+    height: 89vh;
+}
+#processes {
+    margin: 1.5rem;
+}
+.innovations {
+    background: var(--light-green);
+    padding: 5rem;
+    border-radius: 5px;
+    box-shadow: 6px 1px 5px rgba(50, 146, 166, 0.2), -6px 1px 5px rgba(50, 146, 166, 0.2);
+}
+.innovations img {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 2rem;
+}
+#featured {
+    margin: 5rem;
+}
+.updates-heading {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: -2rem;
+}
+.divider {
+    height: .1px;
+    background: var(--light-green);
+    padding: 0rem 1.4rem;
+}
+.featurette {
+    padding: 1rem;
+    margin: .8rem;
+}
+.featurette img {
+    margin: 1rem;
+    max-width: 500px;
+    max-height: 500px;
+}
+.locations-list {
+    padding: 1.2rem;
+    margin-bottom: 4rem;
+}
+#partners {
+    margin-top: -6.1rem;
+    padding: 3rem;
+    background: var(--light-green);
+}
+.partner-logos {
+    padding: 1.5rem;
+    margin-inline: .5rem;
+}
+.footer {
+    background: var(--brown);
+    text-align: center;
+    padding: 3rem 5rem 4rem;
+    font-size: .8rem;
+}
+
+@media(max-width: 991px){
+    .updates-heading {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: .2rem;
+    }
+    .featurette {
+        padding: .1rem;
+    }
+    .featurette img {
+        margin: .3rem;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .locations-list {
+        padding: 0;
+        font-size: .8rem;
+    }
+}
+@media(max-width: 600px){
+    .featurette img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
